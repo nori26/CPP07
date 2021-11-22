@@ -19,12 +19,12 @@ void swap(T &a, T &b) {
 }
 
 template <typename T>
-T &max(const T &a, const T &b) {
+const T &max(const T &a, const T &b) {
   return a > b ? a : b;
 }
 
 template <typename T>
-T &min(const T &a, const T &b) {
+const T &min(const T &a, const T &b) {
   return a < b ? a : b;
 }
 
@@ -32,10 +32,10 @@ template <typename T>
 void test(T a, T b) {
   T a_ = a;
   T b_ = b;
-  std::string amax();
-  std::string bmax();
-  std::string amin();
-  std::string bmin();
+  std::string amax = "";
+  std::string bmax = "";
+  std::string amin = "";
+  std::string bmin = "";
 
   if (&ft::max(a, b) == &a)
     amax = GREEN_BOLD_UNDERLINE;

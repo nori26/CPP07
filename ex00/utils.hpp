@@ -9,6 +9,7 @@ using std::cout;
 using std::endl;
 using std::setw;
 namespace ft {
+
 template <typename T>
 void swap(T &a, T &b) {
   T tmp;
@@ -16,16 +17,21 @@ void swap(T &a, T &b) {
   a = b;
   b = tmp;
 }
+
 template <typename T>
 T &max(T &a, T &b) {
   return a > b ? a : b;
 }
+
 template <typename T>
 T &min(T &a, T &b) {
   return a < b ? a : b;
 }
+
 template <typename T>
 void test(T a, T b) {
+  T a_ = a;
+  T b_ = b;
   std::string amax = "";
   std::string bmax = "";
   std::string amin = "";
@@ -39,18 +45,21 @@ void test(T a, T b) {
     amin = GREEN_BOLD_UNDERLINE;
   else
     bmin = GREEN_BOLD_UNDERLINE;
+  ft::swap(a, b);
 
   cout << BOLD_UNDELINE << endl;
   cout << "                             \n";
   cout << "     |     a     |     b    |\n";
-  cout << "arg  |" << setw(11) << a << "|" << setw(10) << b << "|\n";
+  cout << "arg  |" << setw(11) << a_ << "|" << setw(10) << b_ << "|\n";
+
   cout << "max  |";
-  cout << amax << setw(11) << a << RESET_COLOR << "|";
-  cout << bmax << setw(10) << b << RESET_COLOR << "|" << endl;
+  cout << amax << setw(11) << a_ << RESET_COLOR << "|";
+  cout << bmax << setw(10) << b_ << RESET_COLOR << "|" << endl;
+
   cout << "min  |";
-  cout << amin << setw(11) << a << RESET_COLOR << "|";
-  cout << bmin << setw(10) << b << RESET_COLOR << "|" << endl;
-  ft::swap(a, b);
+  cout << amin << setw(11) << a_ << RESET_COLOR << "|";
+  cout << bmin << setw(10) << b_ << RESET_COLOR << "|" << endl;
+
   cout << "swap |" << setw(11) << a << "|" << setw(10) << b << "|" << endl;
 }
 }  // namespace ft

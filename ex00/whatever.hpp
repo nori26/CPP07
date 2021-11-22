@@ -1,5 +1,5 @@
-#ifndef UTILS_HPP
-#define UTILS_HPP
+#ifndef WHATEVER_HPP
+#define WHATEVER_HPP
 #include <iomanip>
 #include <iostream>
 #define BOLD_UNDELINE "\x1b[39;1;4m"

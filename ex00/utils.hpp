@@ -49,18 +49,18 @@ void test(T a, T b) {
 
   cout << BOLD_UNDELINE << endl;
   cout << "                             \n";
-  cout << "     |     a     |     b    |\n";
-  cout << "arg  |" << setw(11) << a_ << "|" << setw(10) << b_ << "|\n";
+  cout << "|      |     a     |     b    |\n";
+  cout << "| arg  |" << setw(11) << a_ << "|" << setw(10) << b_ << "|\n";
 
-  cout << "max  |";
+  cout << "| max  |";
   cout << amax << setw(11) << a_ << RESET_COLOR << "|";
   cout << bmax << setw(10) << b_ << RESET_COLOR << "|" << endl;
 
-  cout << "min  |";
+  cout << "| min  |";
   cout << amin << setw(11) << a_ << RESET_COLOR << "|";
   cout << bmin << setw(10) << b_ << RESET_COLOR << "|" << endl;
 
-  cout << "swap |" << setw(11) << a << "|" << setw(10) << b << "|" << endl;
+  cout << "| swap |" << setw(11) << a << "|" << setw(10) << b << "|" << endl;
 }
 }  // namespace ft
 

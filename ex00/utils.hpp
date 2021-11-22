@@ -32,10 +32,10 @@ template <typename T>
 void test(T a, T b) {
   T a_ = a;
   T b_ = b;
-  std::string amax = "";
-  std::string bmax = "";
-  std::string amin = "";
-  std::string bmin = "";
+  std::string amax();
+  std::string bmax();
+  std::string amin();
+  std::string bmin();
 
   if (&ft::max(a, b) == &a)
     amax = GREEN_BOLD_UNDERLINE;

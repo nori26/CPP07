@@ -48,7 +48,7 @@ void test(T a, T b) {
   ft::swap(a, b);
 
   cout << BOLD_UNDELINE << endl;
-  cout << "                             \n";
+  cout << "                               \n";
   cout << "|      |     a     |     b    |\n";
   cout << "| arg  |" << setw(11) << a_ << "|" << setw(10) << b_ << "|\n";
 

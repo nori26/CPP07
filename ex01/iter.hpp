@@ -5,6 +5,9 @@
 
 template <typename T>
 void iter(T *ary, size_t length, void (*func)(T &)) {
+  if (!ary || !func) {
+    return;
+  }
   for (size_t i = 0; i < length; i++) {
     func(ary[i]);
   }
@@ -12,6 +15,9 @@ void iter(T *ary, size_t length, void (*func)(T &)) {
 
 template <typename T>
 void iter(const T *ary, size_t length, void (*func)(const T &)) {
+  if (!ary || !func) {
+    return;
+  }
   for (size_t i = 0; i < length; i++) {
     func(ary[i]);
   }

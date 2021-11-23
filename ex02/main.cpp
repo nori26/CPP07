@@ -8,6 +8,7 @@
 #define GREEN_BOLD "\x1b[32;1m"
 #define RESET_COLOR "\x1b[39;0m"
 #define MAX_VAL 750
+
 void example() {
   Array<int> numbers(MAX_VAL);
   int* mirror = new int[MAX_VAL];
@@ -134,4 +135,5 @@ int main(int, char**) {
   test<Fixed, float>(10);
   test<int, int>(10);
   test<char, char>(10);
+  // test<std::string, char>(10);
 }

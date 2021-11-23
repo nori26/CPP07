@@ -129,6 +129,7 @@ void test(const unsigned int size) {
 int main(int, char**) {
   example();
   test<Fixed, int>(10);
+  test<Fixed, float>(10);
   test<int, int>(10);
   test<char, char>(10);
 }

@@ -106,8 +106,9 @@ void eqtest(const unsigned int size) {
             << ": ";
   print(f1, size);
 }
-template <typename T, typename U>
-void excepttest(const unsigned int size, U func) {
+template <typename T>
+void excepttest(const unsigned int size,
+                void (*func)(Array<T>&, const unsigned int)) {
   std::cout << "\n====== except test ======\n" << std::endl;
   try {
     Array<T> f1(size);
@@ -124,6 +125,7 @@ void test(const unsigned int size) {
   sizetest<T>(size);
   copytest<T, U>(size);
   eqtest<T, U>(size);
+  excepttest<T>(size, print);
 }
 
 int main(int, char**) {

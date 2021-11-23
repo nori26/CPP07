@@ -1,4 +1,4 @@
-NAME		:= 
+NAME		:= iter
 CXX			:= clang++
 CXXFLAGS	:= -Wall -Werror -Wextra -MMD -MP -std=c++98
 SRCDIR		:= .

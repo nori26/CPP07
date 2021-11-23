@@ -135,5 +135,6 @@ int main(int, char**) {
   test<Fixed, float>(10);
   test<int, int>(10);
   test<char, char>(10);
-  // test<std::string, char>(10);
+  const Array<int> i(10);
+  std::cout << i[3] << std::endl;
 }

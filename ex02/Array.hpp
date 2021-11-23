@@ -40,6 +40,13 @@ class Array {
     return ary_[index];
   };
 
+  const T &operator[](unsigned int index) const {
+    if (index >= size_) {
+      throw std::range_error("index out of range");
+    }
+    return ary_[index];
+  };
+
   unsigned int size() { return size_; };
 };
 #endif
